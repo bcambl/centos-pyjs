@@ -1,6 +1,6 @@
 # CentOS 7/Python 3.5.1 web-application base image
 
-FROM centos7:latest
+FROM centos:7
 MAINTAINER https://github.com/bcambl
 
 RUN yum install -y gcc make openssl-devel sqlite-devel zlib-devel git \
