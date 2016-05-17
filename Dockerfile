@@ -3,7 +3,8 @@
 FROM centos:7
 MAINTAINER https://github.com/bcambl
 
-RUN yum install -y gcc make openssl-devel sqlite-devel zlib-devel git \
+RUN yum update -y \
+    && yum install -y gcc make openssl-devel sqlite-devel zlib-devel git \
     && curl -O https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz \
     && tar -zxvf Python-3.5.1.tgz \
     && cd Python-3.5.1 \
