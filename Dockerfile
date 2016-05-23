@@ -21,4 +21,6 @@ RUN yum update -y \
     && yum clean all \
     && rpm --rebuilddb
 
+RUN useradd -c "unprivileged application user" -d /code -m -r webapp
+
 CMD ["/bin/bash"]
