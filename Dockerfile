@@ -1,4 +1,4 @@
-# CentOS 7/Python 3.5.2 web-application base image
+# CentOS 7/Python 3.x web-application base image
 
 FROM centos:7
 MAINTAINER https://github.com/bcambl
